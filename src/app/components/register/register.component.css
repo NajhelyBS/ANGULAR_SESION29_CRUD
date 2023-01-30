@@ -1,0 +1,30 @@
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    margin:1rem auto;
+    max-width: 700px;
+}  
+
+h1 {
+    font-size: 27px;
+    font-weight: 850;
+    -webkit-text-stroke-color: #412E8A;
+    -webkit-text-stroke-width: 0.6px;
+    color: #E98C91;
+    text-shadow: 0px 0px 6px white;
+
+}
+
+mat-label {
+    font-weight: 800;
+    
+}
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }

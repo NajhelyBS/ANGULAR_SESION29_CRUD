@@ -46,7 +46,9 @@ export class RegisterComponent implements OnInit{
         title: 'Registro exitoso',
         text: 'El producto ha sido añadido a la lista.'
       });
-      console.log(response)
+      console.log(response);
+      this.dialogRef.close();
+
     })
     .catch( error => {
       console.log(error);

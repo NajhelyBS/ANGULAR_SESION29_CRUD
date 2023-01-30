@@ -1,9 +1,8 @@
-<p>register works!</p>
 
-<section>
+<section class="contenedor">
 
-    <form [formGroup]="RegistroProducto" >
-        <h1> Añadir nuevo producto a la lista</h1>
+    <form [formGroup]="RegistroProducto" class="example-form text-center" >
+        <h1> Añadir nuevo artículo a la lista</h1>
 
         <div class="example-container">
             <mat-form-field appearance="fill" class="example-full-widht">
@@ -28,7 +27,7 @@
 
         <div mat-dialog-actions class="mt-4">
             <button mat-button color="warm" (click)="onNoClick()">Cancelar</button>
-            <button mat-button color="primary" [mat-dialog-close]
+            <button mat-button color="primary" 
             (click)="onSubmit()" cdkFocusInitial>Añadir</button>
         </div>
 

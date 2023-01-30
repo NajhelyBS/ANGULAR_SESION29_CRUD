@@ -9,6 +9,11 @@ import { RegisterComponent } from 'src/app/components/register/register.componen
 import { Productos } from 'src/app/interfaces/interface';
 import { ProductoService } from 'src/app/services/producto.service';
 
+
+//alert
+import Swal from 'sweetalert2';
+
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -24,7 +29,7 @@ export class HomeComponent implements OnInit{
 
   openDialog():void {
     let dialogRef = this.dialog.open(RegisterComponent, {
-      width: '600px',
+      width: '450px',
     });
   }
 
@@ -36,9 +41,31 @@ export class HomeComponent implements OnInit{
 
 
   Delete(producto: Productos){
-    const response =this.productosservice.deleteProducto(producto);
-    console.log(response);
+
+    Swal.fire({
+      title: 'Estás seguro?',
+      text: "No podrás revertir esto!",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Sí, eliminar artículo!'
     
+    }).then((result) => {
+      if (result.isConfirmed) {
+        const response =this.productosservice.deleteProducto(producto);
+        Swal.fire(
+          'Borrado!',
+          'El artículo ha sido eliminado.',
+          'success'
+        )
+        console.log(response);
+      }
+    })
+
+
+
+
   }
 
 }

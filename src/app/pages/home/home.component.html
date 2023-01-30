@@ -2,9 +2,9 @@
 <h1 class="text-center">Lista de Artículos</h1>
 </div>
 
-<div class="container mb-5 contenedor">
+<div class="container mb-5 contenedor mt-2">
     <table class="rounded">
-      <thead>
+      <thead >
           <tr class=" border">
               <th class="text-center py-3" id="title">Producto</th>
               <th class="text-center py-3" id="title">Costo</th>
@@ -26,10 +26,15 @@
             </tr>
       </tbody>
   </table>
-  </div>
+
+
+  <div class="mt-3">
+  <button mat-raised-button color="accent" (click)="openDialog()">Añadir Artículo</button>
+    </div>
+
+</div>
 
 
 
 
 
-<button mat-raised-button color="primary" (click)="openDialog()">Abrir Dialog</button>
