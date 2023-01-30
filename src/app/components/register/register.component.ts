@@ -41,12 +41,12 @@ export class RegisterComponent implements OnInit{
 
   async onSubmit() {
     this.productosservice.addProducto(this.RegistroProducto.value).then(response => {
-      console.log(response)
       Swal.fire({
         icon: 'success',
         title: 'Registro exitoso',
         text: 'El producto ha sido añadido a la lista.'
       });
+      console.log(response)
     })
     .catch( error => {
       console.log(error);

@@ -1,0 +1,28 @@
+.navbar-brand {
+    color: white;
+    font-weight: 900;
+}
+
+img {
+    filter: drop-shadow(0px 0px 5px white);
+}
+.nav-link {
+    color: white;
+}
+.nav-link {
+    margin-right: 1.8em;
+    letter-spacing: 2px;
+    font-weight: 500;
+    border-bottom: solid #472D8E 2px;
+    width: 4.6em;
+}
+.item{
+    background: #12c2e9ab;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f3b9a2a8, #b66b96a1, #694ba19c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f3b9a29a, #b66b969d, #694ba177); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: black;
+    font-weight: 700;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px 0.6px  rgb(10, 10, 10) ;
+    cursor: pointer;
+}
