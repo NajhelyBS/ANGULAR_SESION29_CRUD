@@ -4,6 +4,10 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { RegisterComponent } from './register/register.component';
 
+import { MatButtonModule } from '@angular/material/button';
+import { MatCommonModule } from '@angular/material/core';
+import {MatDialogModule} from '@angular/material/dialog';
+
 
 
 @NgModule({
@@ -13,7 +17,10 @@ import { RegisterComponent } from './register/register.component';
     RegisterComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MatButtonModule,
+    MatCommonModule,
+    MatDialogModule,
   ],
   exports: [
     HeaderComponent,
