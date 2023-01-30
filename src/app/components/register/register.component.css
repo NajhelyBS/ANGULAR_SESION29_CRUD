@@ -5,6 +5,14 @@
     max-width: 700px;
 }  
 
+section {
+    background-image: url(https://e1.pxfuel.com/desktop-wallpaper/759/747/desktop-wallpaper-vertical-on-dog-thumbnail.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+}
+
 h1 {
     font-size: 27px;
     font-weight: 850;
@@ -28,3 +36,21 @@ mat-label {
   .example-full-width {
     width: 100%;
   }
+
+  #cancelar {
+    background-color: #d32d21;
+    color: white;
+}
+ 
+#cancelar:hover {
+    box-shadow: 0px 0px 4px 2px rgb(129, 5, 5);
+}
+
+  #añadir {
+    background-color: #FF4786;
+    color: white;
+  }
+
+  #añadir:hover {
+    box-shadow: 0px 0px 4px 2px#990639;
+}

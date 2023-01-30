@@ -30,3 +30,12 @@ h1 {
 img {
     border: inset #7E516E 3px;
 }
+
+pagination-controls {
+    background-color: #78607d9a;
+    height: 2em;
+    margin-left: 8em;
+    margin-right: 6em;
+    color:Red;
+
+}

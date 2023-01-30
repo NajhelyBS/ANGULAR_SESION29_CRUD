@@ -5,7 +5,7 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
 
 import { MatCommonModule } from '@angular/material/core';
-
+import { NgxPaginationModule } from 'ngx-pagination';
 
 
 @NgModule({
@@ -17,6 +17,7 @@ import { MatCommonModule } from '@angular/material/core';
     MatDialogModule,
     MatButtonModule,
     MatCommonModule,
+    NgxPaginationModule,
   ],
   exports: [
     HomeComponent,

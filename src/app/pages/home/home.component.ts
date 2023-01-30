@@ -22,6 +22,7 @@ import Swal from 'sweetalert2';
 export class HomeComponent implements OnInit{
 
   productos!:Productos[];
+  page_actual = 1;
 
   constructor(
     private dialog:MatDialog,
