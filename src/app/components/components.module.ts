@@ -8,6 +8,11 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCommonModule } from '@angular/material/core';
 import {MatDialogModule} from '@angular/material/dialog';
 
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatIconModule} from '@angular/material/icon';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -21,6 +26,11 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatButtonModule,
     MatCommonModule,
     MatDialogModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatIconModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   exports: [
     HeaderComponent,
